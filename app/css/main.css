@@ -1,9 +1,12 @@
 :root {
   --font-family: "DM Sans", sans-serif;
   --second-family: "Roboto", sans-serif;
-  --content-width: 1280px;
+  --content-width: 1252px;
   --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --bg-color: #ffed2c;
+  --text-color: #0f1213;
+  --border-color: #0f121333;
 }
 
 /* stylelint-disable */
@@ -35,6 +38,7 @@
 
 body {
   font-family: var(--font-family, sans-serif);
+  background-color: var(--bg-color);
 }
 
 img {
@@ -96,4 +100,56 @@ html {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+}
+
+.header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+  height: 93px;
+}
+.header__icon {
+  height: 24px;
+}
+.header__icon--social {
+  width: 24px;
+  height: 24px;
+}
+.header__icon--x {
+  fill: transparent;
+  stroke: var(--text-color);
+  stroke-width: 2;
+}
+.header__list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 9px;
+}
+.burger__span {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */
