@@ -1,6 +1,5 @@
 :root {
-  --font-family: "DM Sans", sans-serif;
-  --second-family: "Roboto", sans-serif;
+  --font-family: arial, sans-serif;
   --content-width: 1252px;
   --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -152,4 +151,88 @@ html {
   width: 48px;
   height: 1px;
   background-color: var(--text-color);
+}
+
+.hero {
+  position: relative;
+  padding: 35px 0;
+}
+.hero__descr {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  will-change: transform, opacity;
+}
+.hero__content {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  will-change: transform, opacity;
+}
+.hero__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.hero__label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.hero__title-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.hero__title {
+  margin: 0;
+  font-family: "Impact", sans-serif;
+  font-size: 23.9vw;
+  line-height: 1;
+  text-align: right;
+  text-transform: uppercase;
+}
+.hero__title--sm {
+  display: block;
+  font-size: 145px;
+}
+.hero__text {
+  margin-left: auto;
+  max-width: 341px;
+}
+.hero__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.hero__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.hero__icon {
+  margin-left: 15px;
+  width: 16px;
+  height: 16px;
+}
+.hero__img {
+  position: absolute;
+  left: -400px;
+  bottom: -450px;
+  z-index: -1;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */
