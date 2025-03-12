@@ -195,7 +195,6 @@ html {
   text-transform: uppercase;
 }
 .hero__title--sm {
-  display: block;
   font-size: 145px;
 }
 .hero__text {
