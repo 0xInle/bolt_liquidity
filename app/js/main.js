@@ -9,32 +9,13 @@
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-gsap.timeline().to(".hero__descr", {
-  opacity: 1,
-  duration: 0.5,
-  ease: "power2.out"
-}).to(".hero__descr", {
-  y: 0,
-  duration: 1,
-  ease: "power4.out",
-  force3D: true
-}).to(".hero__content", {
-  opacity: 1,
-  duration: 0.8,
-  ease: "power2.out"
-}, "-=0.5").to(".hero__content", {
-  y: 0,
-  duration: 1,
-  ease: "power4.out"
-}, "-=0.7").to(".hero__img", {
-  opacity: 1,
-  duration: 1,
-  ease: "power2.out"
-}, "-=0.7").to(".hero__img", {
-  scale: 1,
-  duration: 1.2,
-  ease: "power4.out"
-}, "-=0.8");
+// gsap.timeline()
+//   .to(".hero__descr", { opacity: 1, duration: 0.5, ease: "power2.out" })
+//   .to(".hero__descr", { y: 0, duration: 1, ease: "power4.out", force3D: true })
+//   .to(".hero__content", { opacity: 1, duration: 0.8, ease: "power2.out" }, "-=0.5")
+//   .to(".hero__content", { y: 0, duration: 1, ease: "power4.out" }, "-=0.7")
+//   .to(".hero__img", { opacity: 1, duration: 1, ease: "power2.out" }, "-=0.7")
+//   .to(".hero__img", { scale: 1, duration: 1.2, ease: "power4.out" }, "-=0.8");
 
 /***/ })
 

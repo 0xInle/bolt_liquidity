@@ -155,17 +155,16 @@ html {
 
 .hero {
   position: relative;
-  padding: 35px 0;
+  margin-bottom: 30px;
+  padding: 0;
 }
 .hero__descr {
-  opacity: 0;
   -webkit-transform: translateY(50px);
   -ms-transform: translateY(50px);
   transform: translateY(50px);
   will-change: transform, opacity;
 }
 .hero__content {
-  opacity: 0;
   -webkit-transform: translateY(50px);
   -ms-transform: translateY(50px);
   transform: translateY(50px);
@@ -229,10 +228,25 @@ html {
   position: absolute;
   left: -400px;
   bottom: -450px;
-  z-index: -1;
   width: 100%;
-  opacity: 0;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+.marquee {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100vw;
+}
+.marquee__content {
+  position: absolute;
+  top: 200px;
+  font-family: "Impact", sans-serif;
+  font-size: 240px;
+  line-height: 1;
+  white-space: nowrap;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }/*# sourceMappingURL=main.css.map */
