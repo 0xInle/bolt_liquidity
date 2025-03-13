@@ -275,6 +275,7 @@ html {
 
 .gallery {
   overflow: scroll;
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--border-color);
   padding: 0;
   padding-bottom: 30px;
@@ -308,6 +309,83 @@ html {
   margin-bottom: 15px;
 }
 .gallery__descr {
+  font-family: var(--second-family);
+  font-size: 45px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.built {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0;
+  background-image: url("../img/svg/built-bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.built__decoration {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.built__img--01 {
+  position: absolute;
+  right: 5%;
+  top: -5%;
+  z-index: 10;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.built__img--02 {
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+  z-index: 10;
+}
+.built__img--03 {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  z-index: 10;
+}
+.built__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.built__label {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.built__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: var(--second-family);
+  font-size: 23.8vw;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+.built__cards {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.built__card {
+  max-width: 425px;
+}
+.built__counter {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.built__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: var(--second-family);
   font-size: 45px;
   line-height: 1;
