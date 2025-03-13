@@ -1,5 +1,6 @@
 :root {
   --font-family: arial, sans-serif;
+  --second-family: "Impact", sans-serif;
   --content-width: 1252px;
   --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -274,13 +275,41 @@ html {
 
 .gallery {
   overflow: scroll;
+  border-bottom: 1px solid var(--border-color);
   padding: 0;
+  padding-bottom: 30px;
 }
 .gallery__list {
   gap: 30px;
 }
 .gallery__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 360px;
+}
+.gallery__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px 20px 20px 0;
+}
+.gallery__counter {
+  margin-bottom: 15px;
+}
+.gallery__descr {
+  font-family: var(--second-family);
+  font-size: 45px;
+  line-height: 1;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
